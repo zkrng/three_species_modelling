@@ -1,13 +1,25 @@
-This code runs commputation of Yodzis-Innes 3-species model.
-Refer to the report ('UEFK01_report_3-species_model_v2.pdf') for more detail description of the modelling process.
+# 3-species model using ode45 solver 
 
-Start the modelling by running main.m.
-    run_studied_systems; % Run two studied systems as mentioned in report
-    run_param: Examining the varying parameters in Yodzis-Innes 3-species model 
+This code runs the commputation of the Yodzis-Innes 3-species model using ode45 solver in MATLAB. The work was done  in the course of Basics of Mathematical modelling, University of Eastern Finland, 2020. Refer to the [UEFK01_report_3-species_model_v2.pdf][report] for more details.
 
-It might take ~15 minutes for the whole program to finish.
-The program saves result images to these folders a 'figures' folder, with eight subfolders naming R0, C0, xc, xp, yc, yp, S1 and S2 
-(as attached 'figures' folder).
+## Run the code
+Start the computation by running :
+```sh
+main
+```
+Run two studied systems as mentioned in report:
+```sh
+run_studied_systems
+```
+Examining the varying parameters in Yodzis-Innes 3-species model:
+```sh
+run_param
+```
 
-The work was done by Dao Nguyen, (thi.dao.nguyen@uef.fi, nguyen.dao.bk@gmail.com), Lenka Dvoráková (lenka.dvorakova@uef.fi)
-in the course of Basics of Mathematical modelling, University of Eastern Finland, 2020
+## Notes
+ - It might take ~15 minutes for the whole program to finish (RAM 16GB, AMD Ryzen 3 PRO)
+ - The program saves result images to these folders a 'figures' folder, with eight subfolders naming R0, C0, xc, xp, yc, yp, S1 and S2 (as attached 'figures' folder).
+
+[//]:#
+
+   [report]: <https://github.com/zkrng/three_species_modelling/blob/main/UEFK01_report_3-species_model_v2.pdf>
